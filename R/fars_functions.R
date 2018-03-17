@@ -1,3 +1,5 @@
+library(maps)
+
 #' Read a given file into R
 #'
 #' This is a function that reads a given filename, given by the \code{filename}

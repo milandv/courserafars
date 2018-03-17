@@ -9,7 +9,8 @@ Imports:
     graphics,
     grDevices,
     maps,
-    dplyr
+    dplyr,
+    readr
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
