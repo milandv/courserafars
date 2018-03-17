@@ -16,7 +16,7 @@ This document introduces you to the basics of this package
 ## Summarizing Accidents
 
 ```{r, warning = FALSE, message = FALSE}
-fars_summarize_years(c(2013,2014)
+fars_summarize_years(c(2013,2014))
 ```
 
 ## Plotting Accidents
