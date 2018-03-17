@@ -5,12 +5,11 @@ Authors@R: person("Milan", "de Vries", email = "milan.devries@moveon.org", role 
 Description: This package reads accident data files. The package includes functions to summarize these data across months and plot maps of accidents in different states and years. 
 Depends: R (>= 3.3.2)
 Imports:
-    utils,
     graphics,
-    grDevices,
     maps,
     dplyr,
-    readr
+    readr,
+    tidyr
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
