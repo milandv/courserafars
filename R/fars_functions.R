@@ -72,7 +72,7 @@ make_filename <- function(year) {
 #' @importFrom dplyr mutate select
 #'
 #' @examples
-#' \donotrun{fars_read_years(c(2013,2014))}
+#' \dontrun{fars_read_years(c(2013,2014))}
 fars_read_years <- function(years) {
         lapply(years, function(year) {
                 file <- make_filename(year)
@@ -103,7 +103,7 @@ fars_read_years <- function(years) {
 #' @importFrom tidyr spread
 #'
 #' @examples
-#' \donotrun{fars_summarize_years(c(2013,2014)}
+#' \dontrun{fars_summarize_years(c(2013,2014)}
 #'
 #' @export
 fars_summarize_years <- function(years) {
@@ -136,7 +136,7 @@ fars_summarize_years <- function(years) {
 #' @importFrom graphics points
 #'
 #' @examples
-#' \donotrun{fars_map_state(12,2014)}
+#' \dontrun{fars_map_state(12,2014)}
 #' 
 #' @export
 fars_map_state <- function(state.num, year) {
