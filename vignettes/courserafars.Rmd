@@ -1,0 +1,28 @@
+title: "Coursera Project FARS Vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Coursera Project FARS Vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+
+```{r, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+```
+
+## Intro
+
+This document introduces you to the basics of this package
+
+## Summarizing Accidents
+
+```{r, warning = FALSE, message = FALSE}
+fars_summarize_years(c(2013,2014)
+```
+
+## Plotting Accidents
+
+This package also allows you to visualize accidents in a given year in a given state. This is done through the `fars_map_state()` function. For instance, in the following example, we plot all of the accidents in Florida for the year 2014.
+
+```{r, warning = FALSE, message = FALSE, fig.width = 6}
+fars_map_state(12,2014)
+```
