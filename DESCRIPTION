@@ -3,7 +3,7 @@ Title: Summarizes Accident Data From Read-In Files
 Version: 0.0.0.9000
 Authors@R: person("Milan", "de Vries", email = "milan.devries@moveon.org", role = c("aut", "cre"))
 Description: This package reads accident data files. The package includes functions to summarize these data across months and plot maps of accidents in different states and years. 
-Depends: R (>= 3.3.2)
+Depends: R (>= 3.2.2)
 Imports:
     maps,
     dplyr,
