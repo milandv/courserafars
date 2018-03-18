@@ -6,7 +6,6 @@ vignette: >
   \usepackage[utf8]{inputenc}
 
 ```{r, echo=FALSE, message=FALSE}
-knitr::opts_chunk$set(collapse = T, comment = "#>")
 library(courserafars)
 library(dplyr)
 library(maps)
@@ -19,7 +18,7 @@ This document introduces you to the basics of this package
 ## Summarizing Accidents
 
 ```{r, warning = FALSE, message = FALSE}
-setwd(system.file("..", package = "courserafars"))
+setwd(system.file("data", package = "courserafars"))
 fars_summarize_years(c(2013,2014))
 ```
 
@@ -28,6 +27,6 @@ fars_summarize_years(c(2013,2014))
 This package also allows you to visualize accidents in a given year in a given state. This is done through the `fars_map_state()` function. For instance, in the following example, we plot all of the accidents in Florida for the year 2014.
 
 ```{r, warning = FALSE, message = FALSE, fig.width = 6}
-setwd(system.file("..", package = "courserafars"))
-fars_map_state(12,'2014')
+setwd(system.file("data", package = "courserafars"))
+fars_map_state(12,2014)
 ```

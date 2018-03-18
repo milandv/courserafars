@@ -49,7 +49,7 @@ fars_read <- function(filename) {
 #' make_filename(2013)
 make_filename <- function(year) {
         year <- as.integer(year)
-        sprintf("data/accident_%d.csv.bz2", year)
+        sprintf("accident_%d.csv.bz2", year)
 }
 
 #' Read a series of accident files for given years
