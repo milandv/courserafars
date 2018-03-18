@@ -46,7 +46,7 @@ fars_read <- function(filename) {
 #'	own. Hence not exported.
 #'
 #' @examples
-#' make_filename(2013)
+#' \dontrun{make_filename(2013)}
 make_filename <- function(year) {
         year <- as.integer(year)
         sprintf("accident_%d.csv.bz2", year)
