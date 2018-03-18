@@ -24,5 +24,5 @@ This function is called by the fars_read_years function and not usually called o
 own. Hence not exported.
 }
 \examples{
-make_filename(2013)
+\dontrun{make_filename(2013)}
 }

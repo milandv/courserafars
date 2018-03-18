@@ -27,5 +27,4 @@ accident data file the function produces an error.
 }
 \examples{
 \dontrun{fars_map_state(12,2014)}
-
 }
