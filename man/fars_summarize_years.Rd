@@ -20,6 +20,6 @@ accidents per month for a given set of years from
 accident data files.
 }
 \examples{
-\\donotrun{fars_summarize_years(c(2013,2014)}
+\dontrun{fars_summarize_years(c(2013,2014)}
 
 }

@@ -26,6 +26,6 @@ issues a warning. If the state number does not correspond to a state in the
 accident data file the function produces an error.
 }
 \examples{
-\\donotrun{fars_map_state(12,2014)}
+\dontrun{fars_map_state(12,2014)}
 
 }

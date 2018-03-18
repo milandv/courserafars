@@ -25,5 +25,5 @@ typically called by the \code{fars_summarize_years()} function and not
 run on its own. Hence not exported.
 }
 \examples{
-\\donotrun{fars_read_years(c(2013,2014))}
+\dontrun{fars_read_years(c(2013,2014))}
 }
