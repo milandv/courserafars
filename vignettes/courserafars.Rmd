@@ -16,6 +16,7 @@ This document introduces you to the basics of this package
 ## Summarizing Accidents
 
 ```{r, warning = FALSE, message = FALSE}
+setwd(system.file("..", package = "courserafars"))
 fars_summarize_years(c(2013,2014))
 ```
 
@@ -24,5 +25,6 @@ fars_summarize_years(c(2013,2014))
 This package also allows you to visualize accidents in a given year in a given state. This is done through the `fars_map_state()` function. For instance, in the following example, we plot all of the accidents in Florida for the year 2014.
 
 ```{r, warning = FALSE, message = FALSE, fig.width = 6}
-fars_map_state(12,2014)
+setwd(system.file("..", package = "courserafars"))
+fars_map_state(12,'2014')
 ```
