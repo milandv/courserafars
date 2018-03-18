@@ -45,8 +45,7 @@ fars_read <- function(filename) {
 #' @note This function is called by the fars_read_years function and not usually called on its
 #'	own. Hence not exported.
 #'
-#' @examples
-#' \dontrun{make_filename(2013)}
+#' @examples \dontrun{make_filename(2013)}
 make_filename <- function(year) {
         year <- as.integer(year)
         sprintf("accident_%d.csv.bz2", year)
@@ -102,9 +101,7 @@ fars_read_years <- function(years) {
 #' @importFrom dplyr %>% bind_rows group_by summarize
 #' @importFrom tidyr spread
 #'
-#' @examples
-#' \dontrun{fars_summarize_years(c(2013,2014)}
-#'
+#' @examples \dontrun{fars_summarize_years(c(2013,2014)}
 #' @export
 fars_summarize_years <- function(years) {
         dat_list <- fars_read_years(years)
@@ -135,9 +132,7 @@ fars_summarize_years <- function(years) {
 #' @importFrom maps map
 #' @importFrom graphics points
 #'
-#' @examples
-#' \dontrun{fars_map_state(12,2014)}
-#' 
+#' @examples \dontrun{fars_map_state(12,2014)}
 #' @export
 fars_map_state <- function(state.num, year) {
         filename <- make_filename(year)
