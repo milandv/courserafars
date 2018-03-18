@@ -25,5 +25,5 @@ director will result in an error. This function is called by the make_filename
 function and usually not called on its own.
 }
 \examples{
-\\donotrun{fars_read('accident_2013.csv.bz2')}
+\dontrun{fars_read('accident_2013.csv.bz2')}
 }
