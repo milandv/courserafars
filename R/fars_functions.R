@@ -99,7 +99,7 @@ fars_read_years <- function(years) {
 #'	each provided year and a row for each month. The values in the data frame
 #'	are counts of accidents for the corresponding month and year.
 #'
-#' @importFrom dplyr bind_rows group_by summarize
+#' @importFrom dplyr %>% bind_rows group_by summarize
 #' @importFrom tidyr spread
 #'
 #' @examples
