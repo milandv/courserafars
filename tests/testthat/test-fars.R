@@ -1,9 +1,11 @@
 library(dplyr)
 library(maps)
 
-context("Test inputs")
+setwd(system.file("extdata", package = "courserafars"))
+context("Test Basic Functionality")
 
-test_that("make_filename returns correct output", {
-    expect_is(make_filename(2013),"character")
+test_that("Year summarizing works", {
+    expect_is(fars_summarize_years(c(2013,2014)),"tbl_df")
+    expect_error(fars_summarize_years('bob'))
 })
 
