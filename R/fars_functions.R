@@ -69,7 +69,7 @@ make_filename <- function(year) {
 #'	typically called by the \code{fars_summarize_years()} function and not
 #'	run on its own. Hence not exported.
 #'
-#' @importFrom dplyr mutate select
+#' @importFrom dplyr %>% mutate select
 #'
 #' @examples
 #' \dontrun{fars_read_years(c(2013,2014))}
