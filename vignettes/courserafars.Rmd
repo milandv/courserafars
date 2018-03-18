@@ -16,9 +16,11 @@ library(maps)
 
 ## Intro
 
-This document introduces you to the basics of this package
+This document introduces you to the basics of this package. This packages provides a set of functions to analyze accident data files created by the National Highway Traffic Safety Administration [NHTSA](https://nhtsa.gov/). The files record fatal motor vehicle accidents in the United States. 
 
 ## Summarizing Accidents
+
+One main function of this package is to summarize accident data by month, across years. This is done with the `fars_summarize_years()` function, which takes a vector or list of years and outputs a comparison table. Note that the accident data files must be in the working director of the session.
 
 ```{r}
 setwd(system.file("extdata", package = "courserafars"))
